@@ -130,7 +130,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-
+                SizedBox(height: 10,),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: OutlinedButton(
@@ -171,6 +171,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ],
+            
             ),
           ),
 
@@ -199,10 +200,26 @@ class HomePage extends StatelessWidget {
                 color: Colors.deepPurple.shade300,
               ),
             ),
+
+          
           ),
+          Container(
+             height : 300,
+             width : 300,
+             margin: EdgeInsets.all(5),
+             padding: EdgeInsets.all(10),
+             alignment: Alignment.center,
+             decoration: BoxDecoration(
+              color: Colors.indigoAccent,
+              border: Border.all(color: Colors.indigoAccent),
+              //borderRadius: BorderRadius.all(Radius.circular(20)),
+              shape: BoxShape.circle
+             ),
+             child: Text("Welcome container"),
+            ),
         ],
       ),
-
+      
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: "Add",
